@@ -1,3 +1,13 @@
+
+
+# Resources
+
+* express app generator - https://expressjs.com/en/starter/generator.html
+* express app in electron - https://gist.github.com/maximilian-lindsey/a446a7ee87838a62099d
+* icons for electron app - https://www.christianengvall.se/electron-app-icons/
+* working with menu - https://coursetro.com/posts/code/119/Working-with-Electron-Menus---Tutorial
+* state management between reactjs and electron - https://blog.logrocket.com/building-a-menu-bar-application-with-electron-and-react/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -47,6 +57,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
 ### Analyzing the Bundle Size
@@ -69,3 +80,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # attendance-scanner
+
+
