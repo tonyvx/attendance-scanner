@@ -21,3 +21,17 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+out
+
+express-node/node_modules
+express-node/public/react.js
+express-node/public/131.react.js
+express-node/public/6ce24c58023cc2f8fd88.svg
+express-node/public/node_modules_web-vitals_dist_web-vitals_js.react.js
+build
+coverage
+
+public/131.react.js
+public/6ce24c58023cc2f8fd88.svg
+public/node_modules_web-vitals_dist_web-vitals_js.react.js
+

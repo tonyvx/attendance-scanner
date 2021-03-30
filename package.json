@@ -1,21 +1,52 @@
 {
   "name": "attendance-scanner",
+  "description": "Attendance scanner",
+  "author": "tonyvx",
+  "productName": "Attendance Scanner",
+  "main": "electron/main.js",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
+    "body-parser": "^1.19.0",
+    "docxtemplater": "^3.21.1",
+    "express": "^4.17.1",
+    "pizzip": "^3.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-qr-reader": "^2.2.1",
     "react-scripts": "4.0.3",
+    "react-timer-hook": "^2.0.7",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-win": "set BROWSER=none && react-scripts start",
+    "start-electron": "export ELECTRON_START_URL=http://localhost:3000 && electron .",
+    "electron": "electron .",
+    "clean": "rm -rf build dist",
     "build": "react-scripts build",
+    "build-electron": "mkdir build/src && cp -r electron/. build/electron && cp -r src/shared/. build/src/shared",
+    "package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/main.js --publish never",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "build": {
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "publish": {
+      "provider": "github",
+      "repo": "electron-cra-example",
+      "owner": "johndyer24"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +65,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/register": "^7.13.8",
+    "@babel/runtime-corejs3": "^7.12.5",
+    "css-loader": "^5.2.0",
+    "electron": "^12.0.2",
+    "electron-builder": "^22.10.5",
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^5.5.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "3.11.0"
   }
 }
