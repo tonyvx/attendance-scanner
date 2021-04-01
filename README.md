@@ -7,6 +7,14 @@
 * icons for electron app - https://www.christianengvall.se/electron-app-icons/
 * working with menu - https://coursetro.com/posts/code/119/Working-with-Electron-Menus---Tutorial
 * state management between reactjs and electron - https://blog.logrocket.com/building-a-menu-bar-application-with-electron-and-react/
+* qr code generator 
+```sh
+# installs segno
+pip install segno
+
+# generate qr code
+segno --scale 20 -o=something.svg 'something qr code'
+```
 
 # Getting Started with Create React App
 
