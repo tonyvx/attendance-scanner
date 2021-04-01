@@ -14,6 +14,10 @@ pip install segno
 
 # generate qr code
 segno --scale 20 -o=something.svg 'something qr code'
+
+# generate qr codes in batch
+while read line; do segno --scale 20 -o="$line.svg" "$line"; done <../names.sh
+
 ```
 
 # Getting Started with Create React App
